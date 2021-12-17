@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+<!-- {% block link %}"static/home.css"{% endblock %} -->
+
+{% block title %}Question 1{% endblock %}
+
+
+{% block content %}
+    <!-- <h1>{{question.question}}</h1>
+    <p>{{question.choices}}</p>
+    <div><a href="">{{question.choices[0]}}</a><div>
+    <div><a href="">{{question.choices[1]}}</a><div> -->
+    <form action="/answer" method="post">
+        <h1>{{question.question}}</h1>
+        <label for="yes">{{question.choices[0]}}
+            <input type="radio" name="answer" id="answer_1" value="yes">
+        </label>
+        <label for="no">{{question.choices[1]}}
+            <input type="radio" name="answer" value="no">
+        </label>
+        <button>Submit</button>
+        
+
+    </form>
+    
+{% endblock %}
