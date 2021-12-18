@@ -37,11 +37,21 @@ def get_question0():
 
 
 @app.route("/answer", methods=["POST", "GET"])
-def save_answers():
+def save_first_question():
     answer = request.form["answer"]
     RESPONSES.append(answer)
 
     return redirect("/question/1")
 
 
-@app.route("/question/1")
+@app.route("/questions/1")
+def get_question1():
+    return render_template("question1.html", question=questions[2])
+
+
+@app.route("/question/1", methods=["POST", "GET"])
+def save_second_question():
+    answer = request.form["answer"]
+    RESPONSES.append(answer)
+
+    return redirect("/question/1")
