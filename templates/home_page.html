@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
-{% block link %}"static/home.css"{% endblock %}
+{% block link %}"static/home_page.css"{% endblock %}
 
 {% block title %}Survay Home{% endblock %}
 
 {% block content %}
     <h1>{{survey.title}}</h1>
     <p>{{survey.instructions}}</p>
-    <div><a href="/questions/0">Go to First Question</a><div>
+    <div><a href="/questions/0"><i class="far fa-arrow-alt-circle-right"></i></a><div>
+    
 {% endblock %}

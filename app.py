@@ -35,7 +35,7 @@ def get_question0():
     return render_template("question0.html", question=questions[0])
 
 
-@app.route("/answer", methods=["POST", "GET"])
+@app.route("/answer/0", methods=["POST", "GET"])
 def save_first_question():
     answer = request.form["answer"]
     RESPONSES.append(answer)
@@ -49,7 +49,7 @@ def get_question1():
     return render_template("question1.html", question=questions[1])
 
 
-@app.route("/answer", methods=["POST", "GET"])
+@app.route("/answer/1", methods=["POST", "GET"])
 def save_second_question():
     answer = request.form["answer"]
     RESPONSES.append(answer)
@@ -63,10 +63,26 @@ def get_question2():
     return render_template("question2.html", question=questions[2])
 
 
+@app.route("/answer/2", methods=["POST", "GET"])
+def save_third_question():
+    answer = request.form["answer"]
+    RESPONSES.append(answer)
+
+    return redirect("/questions/3")
+
+
 # Routes for the fourth question
 @app.route("/questions/3")
 def get_question3():
     return render_template("question3.html", question=questions[3])
+
+
+@app.route("/answer/3", methods=["POST", "GET"])
+def save_fourth_question():
+    answer = request.form["answer"]
+    RESPONSES.append(answer)
+
+    return redirect("/thank-you")
 
 
 @app.route("/thank-you")

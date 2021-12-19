@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd8c4;
+}
+
+#container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 3rem;
+  left: 32vw;
+  border: 6px solid #84b59f;
+  border-radius: 20px;
+  width: 30vw;
+  height: 50vh;
+}
+
+h1 {
+  position: relative;
+  top: -11rem;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+}
+
+p {
+  position: relative;
+  top: -5rem;
+  font-size: 25px;
+  font-family: "Maven Pro", sans-serif;
+}
+
+div {
+  position: relative;
+  bottom: -8rem;
+  right: -15rem;
+}
+
+a {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  width: 11rem;
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  font-size: 50px;
+  color: #69a297;
+}
+
+i:hover {
+  color: #50808e;
+}

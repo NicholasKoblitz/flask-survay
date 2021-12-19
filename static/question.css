@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd8c4;
+}
+
+#container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 3rem;
+  left: 32vw;
+  border: 6px solid #84b59f;
+  border-radius: 20px;
+  width: 30vw;
+  height: 50vh;
+}
+
+h1 {
+  position: relative;
+  top: -6rem;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+label {
+  font-size: 30px;
+}
+
+input {
+  position: relative;
+  bottom: -0.5rem;
+  width: 4rem;
+  height: 2rem;
+}
+
+button {
+  position: relative;
+  background-color: #ddd8c4;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+}
+
+button {
+  position: relative;
+  right: -15rem;
+  bottom: -3rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+i {
+  width: 5rem;
+}

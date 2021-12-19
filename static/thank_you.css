@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd8c4;
+}
+
+h1 {
+  position: relative;
+  top: 6rem;
+  left: 40rem;
+  font-size: 40px;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+}
